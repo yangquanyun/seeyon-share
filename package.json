@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "slidev --open",
-    "build": "slidev build",
-    "export": "slidev export"
+    "build": "slidev build --base /hooks-vue-composable/ --out ../../dist/hooks-vue-composable",
+    "export": "slidev export --dark --output ../hooks-value-composable.pdf"
   },
   "dependencies": {
-    "@iconify-json/logos": "^1.2.4",
     "@slidev/cli": "^51.8.0",
     "@slidev/theme-bricks": "^0.25.0",
     "@slidev/theme-default": "latest",
@@ -16,5 +15,10 @@
     "slidev-theme-penguin": "^2.3.1",
     "vite-svg-loader": "^5.1.0",
     "vue": "^3.5.14"
+  },
+  "devDependencies": {
+    "@iconify-json/logos": "^1.2.4",
+    "@iconify-json/ri": "^1.2.5",
+    "playwright-chromium": "^1.53.0"
   }
 }
